@@ -49,9 +49,11 @@
   header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
   .mark { display: flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
   .mark i { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); display: inline-block; }
-  nav.links { display: flex; gap: 22px; font-size: 15px; color: var(--ink-2); }
+  nav.links { display: flex; align-items: center; gap: 22px; font-size: 15px; color: var(--ink-2); }
   nav.links a { text-decoration: none; }
   nav.links a:hover { color: var(--ink); }
+  nav.links a.cv { background: var(--ink); color: var(--paper); padding: 7px 14px; border-radius: 999px; font-size: 14px; font-weight: 500; white-space: nowrap; }
+  nav.links a.cv:hover { color: var(--paper); opacity: .85; }
 
   .hero { padding: 88px 0 56px; }
   .hero h1 { font: 400 clamp(40px, 6.4vw, 76px)/1.02 var(--serif); letter-spacing: -.02em; margin: 18px 0 24px; max-width: 15ch; }
@@ -144,6 +146,7 @@
     .phone .shot { max-width: 280px; }
     table.stack-t th { width: 110px; }
     nav.links { gap: 14px; }
+    nav.links .sm-hide, nav.links a.cv .dom { display: none; }
     section.block { padding-top: 72px; }
   }
 </style>
@@ -156,9 +159,10 @@
     <nav class="links">
       <a href="#problem" class="opt">Problem</a>
       <a href="#demo">Demo</a>
-      <a href="#agent">The agent</a>
+      <a href="#agent" class="sm-hide">The agent</a>
       <a href="#build" class="opt">How it's built</a>
-      <a href="#about">About</a>
+      <a href="#about" class="sm-hide">About</a>
+      <a class="cv" href="https://hassansher.com" target="_blank" rel="noopener">Résumé<span class="dom"> · hassansher.com</span> ↗</a>
     </nav>
   </div>
 </header>
