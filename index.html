@@ -6,7 +6,7 @@
 <title>Kovelink, by Hassan Sher</title>
 <meta name="description" content="Kovelink is a project by Hassan Sher: software and one agent that start, keep compliant and run small transportation companies.">
 <meta property="og:title" content="Kovelink, a project by Hassan Sher">
-<meta property="og:description" content="Software and one agent that start, keep compliant and run small transportation companies. In daily use at a black car company.">
+<meta property="og:description" content="Software and one agent that start, keep compliant and run small transportation companies. Built in partnership with NPT Worldwide Limousine Inc.">
 <meta property="og:image" content="img/dispatch.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +39,7 @@
   html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--sans); }
   img { max-width: 100%; height: auto; display: block; }
+  video { width: 100%; height: auto; display: block; background: #f7f4ee; }
   a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
   .narrow { max-width: 720px; }
@@ -154,6 +155,7 @@
     <a class="mark" href="#"><i></i>Kovelink</a>
     <nav class="links">
       <a href="#problem" class="opt">Problem</a>
+      <a href="#demo">Demo</a>
       <a href="#agent">The agent</a>
       <a href="#build" class="opt">How it's built</a>
       <a href="#about">About</a>
@@ -168,15 +170,18 @@
     <h1>One agent that runs the office of a <em>small transportation company.</em></h1>
     <p class="lede">Kovelink helps people start a car service or trucking company, keep it compliant, and run the day: rides, quotes, invoices, driver pay and permits. Everything about a ride lives in one record.</p>
     <div class="byline">
-      <div class="who"><span class="avatar">HS</span><span><strong>Hassan Sher</strong><br>Software engineer</span></div>
+      <div class="who"><span class="avatar">HS</span><span><strong><a href="https://hassansher.com">Hassan Sher</a></strong><br>Software engineer</span></div>
       <span>Feb 2026 to now</span>
-      <span>Used daily by a black car company in New Jersey</span>
+      <span>In partnership with NPT Worldwide Limousine Inc.</span>
     </div>
   </section>
 
-  <figure class="shot hero-shot">
-    <img src="img/dispatch.jpg" alt="Kovelink's Jobs screen: a list of airport and hotel rides with status, driver, passenger count and buttons to message, map or manage each ride." width="1600" height="1000">
-    <figcaption>The dispatch board. Each ride (#1042 is one) carries its quote, driver, invoice, payment and paperwork. Sample data.</figcaption>
+  <figure class="shot hero-shot" id="demo">
+    <video controls playsinline preload="metadata" poster="media/kovelink-demo-poster.jpg" width="1920" height="1200" aria-label="Kovelink demo video, about a minute and a half, with on-screen captions">
+      <source src="media/kovelink-demo.mp4" type="video/mp4">
+      <a href="media/kovelink-demo.mp4">Download the demo video (MP4)</a>
+    </video>
+    <figcaption>Demo, 1:35, captioned, no sound. The agent answers a billing question from the records, waits for approval before emailing a customer, turns a typed request into a booking, and shows one ride from the customer's text to the books. Sample company and data, run on a local copy.</figcaption>
   </figure>
 
   <div class="facts">
@@ -194,7 +199,7 @@
     </div>
     <div class="block-body">
       <p>A three-car limo company or a one-truck carrier still has to answer the phone, quote the trip, assign a driver, invoice, chase payment, pay drivers and keep every permit and driver file current. Most owners juggle a dispatch app, QuickBooks, spreadsheets and a binder. Many pay a compliance service <strong>$150 to $400 a month</strong> just to remember the deadlines.</p>
-      <p>I started building while working with a black car company. They didn't need more software. They needed fewer places where the same ride lived.</p>
+      <p>I started building with NPT Worldwide Limousine Inc., a black car company in Princeton Junction, New Jersey. They didn't need more software. They needed fewer places where the same ride lived.</p>
     </div>
   </section>
 
@@ -338,6 +343,7 @@
       <div class="big">Hassan Sher</div>
     </div>
     <div class="contact">
+      <a href="https://hassansher.com">hassansher.com</a><br>
       <a href="mailto:hassansher03@outlook.com">hassansher03@outlook.com</a><br>
       <a href="https://www.linkedin.com/in/hassan-sher-527257202" target="_blank" rel="noopener">LinkedIn</a><br>
       <span class="label">ALL SCREENSHOTS USE SAMPLE DATA</span>
