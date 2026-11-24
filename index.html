@@ -270,7 +270,7 @@
       <ul class="points">
         <li><strong>Tools are scoped on the server</strong>The agent only gets the tools that the company's modules and the user's role allow. Every request is checked on the server, not only in the UI.</li>
         <li><strong>Escalates instead of guessing</strong>A confidence gate sends unclear or risky requests to a person. Sending money or messages always asks first.</li>
-        <li><strong>Evaluations in CI</strong>Agent evaluations run in CI on every change. I fine-tuned and benchmarked routing models on a set of labeled requests. The best scored 89.7% on strict accuracy and 97.1% when it was allowed to hand off to a person.</li>
+        <li><strong>Evaluations in CI</strong>Agent evaluations run in CI on every change. I fine-tuned and benchmarked routing models on a set of labeled requests. The best scored 89.7% on strict accuracy and 97.1% when it was allowed to hand off to a person. One of them, a Qwen2.5 7B fine-tuned with LoRA, is <a href="https://huggingface.co/Kovelink/kovelink-qwen7b" target="_blank" rel="noopener">open on Hugging Face</a>.</li>
         <li><strong>Compliance answers cite sources</strong>Answers point to the official state or federal page they came from, so an owner can check them.</li>
       </ul>
     </div>
